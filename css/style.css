@@ -1,0 +1,11 @@
+.lines {
+    font-size:116px;
+    text-align: center;
+    border: solid 2px black;
+    width: 200px;
+    height: 200px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
