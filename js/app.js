@@ -20,36 +20,35 @@ Make a function to where it checks for 3 in a row every turn inbetween.
     var grid = document.querySelectorAll('.lines').value;
      
      
-     function playerX() {
+     function init() {
          for (let i = 0; i < square.length; i++) {
              const element = square[i];
              element.addEventListener('click', function (event) {
-                element.innerHTML = 'X';
-                playerO();
+                game();
                 
              })
          }
      }
-     playerX();
-     function playerO() {
-             for (let i = 0; i < square.length; i++) {
-                 const element = square[i];
-                 element.addEventListener('click', function (event) {
+     init();
+    //  function playerO() {
+    //          for (let i = 0; i < square.length; i++) {
+    //              const element = square[i];
+    //              element.addEventListener('click', function (event) {
                     
-                    //  if(value = "") {
-                         element.innerHTML = 'O'
-                         playerX();
+    //                 //  if(value = "") {
+    //                      element.innerHTML = 'O'
+    //                      playerX();
 
-                    //  }
+    //                 //  }
                     
-                 })
-             }
-     }
-    for (let i = 0; i < square.length; i++) {
-        const element = square[i];
-        let grid = i;
-        console.log(grid)
-    }
+    //              })
+    //          }
+    //  }
+    // for (let i = 0; i < square.length; i++) {
+    //     const element = square[i];
+    //     let grid = i;
+    //     console.log(grid)
+    // }
 
     //  function check3s() {
          
@@ -58,3 +57,8 @@ Make a function to where it checks for 3 in a row every turn inbetween.
 
 
 //}    
+    function game() {
+        this ? 'x' : 'o'
+
+        
+    }
